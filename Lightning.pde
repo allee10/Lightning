@@ -1,4 +1,4 @@
-  int startX=47;
+ int startX=47;
   int startY=158;
   int endX=47;
   int endY=158;
@@ -6,12 +6,13 @@ void setup()
 {
   size(600,300);
   strokeWeight(3);
-  background(0,10,0);
+  background(255,255,255);
 }
 void draw()
 {
   frameRate(3);
-   background(0);
+   fill(0,0,0,170);
+   rect(0,0,600,300);
    stroke((int)(Math.random()*180)+75,(int)(Math.random()*180)+75,(int)(Math.random()*180)+75);
 while(endX<601){
   endX=startX+(int)(Math.random()*20);
@@ -20,6 +21,7 @@ while(endX<601){
   startX=endX;
   startY=endY;
 }
+fill(255,255,255);
 stroke(255,255,255);
   ellipse(30,140,18,18);
   line(30,140,30,180);
